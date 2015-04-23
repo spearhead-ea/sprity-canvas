@@ -43,6 +43,8 @@ describe('sprity-canvas', function () {
       log: log,
       options: {}
     }).then(function (image) {
+      image.should.have.property('type', 'png');
+      image.should.have.property('mimeType', 'image/png');
       image.should.have.property('width', 136);
       image.should.have.property('height', 264);
       image.should.have.property('contents');
@@ -62,6 +64,8 @@ describe('sprity-canvas', function () {
         'canvas-smoothing': false
       }
     }).then(function (image) {
+      image.should.have.property('type', 'png');
+      image.should.have.property('mimeType', 'image/png');
       image.should.have.property('width', 136);
       image.should.have.property('height', 264);
       image.should.have.property('contents');
@@ -83,6 +87,8 @@ describe('sprity-canvas', function () {
       log: log,
       options: {}
     }).then(function (image) {
+      image.should.have.property('type', 'png');
+      image.should.have.property('mimeType', 'image/png');
       image.should.have.property('width', 68);
       image.should.have.property('height', 132);
       image.should.have.property('contents');

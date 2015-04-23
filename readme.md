@@ -25,9 +25,9 @@ If you want to use the command line interface of `sprity` install it globally.
 npm install sprity sprity-canvas -g
 ```
 
-## Limitations
+## Supported image formats
 
-* at the moment **only supports png**
+* png (**Default**)
 
 ## Options
 

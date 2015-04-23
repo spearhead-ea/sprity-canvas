@@ -36,6 +36,8 @@ var resize = function (image, opt) {
       ctx.drawImage(img, 0, 0, opt.width, opt.height);
       resolve({
         contents: new Buffer(canvas.toBuffer()),
+        type: 'png',
+        mimeType: 'image/png',
         width: canvas.width,
         height: canvas.height
       });
@@ -66,6 +68,8 @@ module.exports = {
       .then(function () {
         return {
           contents: new Buffer(canvas.toBuffer()),
+          type: 'png',
+          mimeType: 'image/png',
           width: canvas.width,
           height: canvas.height
         };
