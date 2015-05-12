@@ -1,6 +1,6 @@
 {
   "name": "sprity-canvas",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "node-canvas image processing engine for sprity",
   "repository": {
     "type": "git",
@@ -38,7 +38,7 @@
     "sprity"
   ],
   "dependencies": {
-    "canvas": "1.1.6",
+    "canvas": "1.2.2",
     "bluebird": "^2.9.24"
   },
   "devDependencies": {
