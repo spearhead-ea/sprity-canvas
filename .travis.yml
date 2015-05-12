@@ -1,6 +1,10 @@
 language: node_js
 node_js:
-  - '0.10'
-  - '0.12'
+- '0.10'
+- '0.12'
 before_install:
-  - sudo apt-get install libcairo2-dev libjpeg8-dev libpango1.0-dev libgif-dev build-essential g++
+- sudo apt-get install libcairo2-dev libjpeg8-dev libpango1.0-dev libgif-dev build-essential
+  g++
+notifications:
+  slack:
+    secure: RS0aqrlXYwAdjP0Ka2mRcHWvqYQEJvGeaXQtMNCTRjI3GWEAIquqzoBE/WQNRCymuni6SVjRCMF0RE3jjc+zlQMFsLxJkSPsxZdWhe1IVtz4yEO3zCLuB/1raVYUCnqr67xbHkyFZdoPDwX15z4C8lE63cyYDi/vVED3mqY1Hys=
